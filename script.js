@@ -59,3 +59,6 @@ function createKeyboard() {
     });
 }
 
+// Initialize game
+displayWord();
+createKeyboard();
