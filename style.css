@@ -52,3 +52,7 @@ body {
     font-weight: bold;
 }
 
+.wrong {
+    margin-top: 0.5rem;
+    color: #e63946;
+}
