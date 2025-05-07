@@ -40,3 +40,9 @@ body {
     background-color: #007bff;
     color: white;
 }
+
+.keyboard button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
