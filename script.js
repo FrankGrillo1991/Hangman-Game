@@ -36,3 +36,16 @@ function disableAllButtons() {
 }
 
 // Handle Letter guess
+function guessLetter(letter, button) {
+    button.disabled = true;
+    if (word.includes(letter)) {
+        guessLetters.push(letter);
+    } else {
+        wrongGuesses++;
+        wrongCount.textContent = wrongGuesses;
+    }
+    displayWord();
+    checkGameStatus();
+}
+
+// Create keyboard
