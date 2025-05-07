@@ -28,3 +28,11 @@ function checkGameStatus() {
         disableAllButtons();
     }
 }
+
+// Disable all keyboard buttons
+function disableAllButtons() {
+    const buttons = keyboard.querySelectorAll("button");
+    buttons.forEach(btn => btn.disabled = true)
+}
+
+// Handle Letter guess
