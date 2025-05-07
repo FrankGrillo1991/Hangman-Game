@@ -39,7 +39,7 @@ function disableAllButtons() {
 function guessLetter(letter, button) {
     button.disabled = true;
     if (word.includes(letter)) {
-        guessLetters.push(letter);
+        guessedLetters.push(letter);
     } else {
         wrongGuesses++;
         wrongCount.textContent = wrongGuesses;
