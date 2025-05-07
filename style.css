@@ -18,3 +18,9 @@ body {
     width: 100%;
 }
 
+.word {
+    font-size: 2rem;
+    margin: 1rem 0;
+    letter-spacing: 0.5rem;
+}
+
