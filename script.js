@@ -49,3 +49,13 @@ function guessLetter(letter, button) {
 }
 
 // Create keyboard
+function createKeyboard() {
+    const letters = "abcdefghijklmnopqrstuvwxyz";
+    letters.split("").forEach(letter => {
+        const button = document.createElement("button");
+        button.textContent = letter;
+        button.addEventListener("click", () => guessLetter(letter, button));
+        keyboard.appendChild(button);
+    });
+}
+
