@@ -24,3 +24,11 @@ body {
     letter-spacing: 0.5rem;
 }
 
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
