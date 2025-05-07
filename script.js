@@ -18,3 +18,13 @@ function displayWord() {
 }
 
 // Check if game is over
+function checkGameStatus() {
+    const won = word.split("").every(letter => guessedLetters.includes(letter));
+    if (won) {
+        message.textContent = "🎉 You Win!";
+        disableAllButtons();
+    } else if (wrongGuesses >= maxWrong) {
+        message.textContent = `💀 You Lose! Word was "${word}"`;
+        disableAllButtons();
+    }
+}
